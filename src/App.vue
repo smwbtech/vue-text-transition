@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <VueTextTransition tag="div">some text goes here</VueTextTransition>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import HelloWorld from './components/HelloWorld.vue'
+import VueTextTransition from '@/components/VueTextTransition.vue'
 
 @Component({
   components: {
-    HelloWorld
+    VueTextTransition
   }
 })
 export default class App extends Vue {}
