@@ -10,7 +10,7 @@
     "vue transition",
     "vue animation"
   ],
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "./dist/vue-text-transition.common.js",
   "files": [
     "dist/*.js",
