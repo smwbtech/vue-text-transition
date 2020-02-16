@@ -6,7 +6,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/smwbtech/vue-text-transition/badge.svg?branch=master)](https://coveralls.io/github/smwbtech/vue-text-transition?branch=master)
 [![Size](https://badgen.net/bundlephobia/minzip/vue-text-transition)](https://bundlephobia.com/result?p=vue-text-transition@1.0.4)
 
-!![Gif Image](https://raw.githubusercontent.com/smwbtech/vue-text-transition/master/public/vue-text-transition.gif)
+![Gif Image](https://raw.githubusercontent.com/smwbtech/vue-text-transition/master/public/vue-text-transition.gif)
 
 The component to animate your text letter by letter. You can bind different classes to each letter using css selectors.
 
