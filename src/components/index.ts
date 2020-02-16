@@ -2,17 +2,17 @@ import VueTextTransition from './VueTextTransition'
 import { VueConstructor } from 'vue'
 
 interface CustomComponent extends VueConstructor {
-  installed: boolean;
+  installed: boolean
 }
 
 // eslint-disable-next-line
 declare global {
   namespace NodeJS {
     interface Global {
-      document: Document;
-      window: Window;
-      navigator: Navigator;
-      Vue: object;
+      document: Document
+      window: Window
+      navigator: Navigator
+      Vue: object
     }
   }
 }
@@ -44,4 +44,4 @@ if (GlobalVue) {
 }
 
 // Экспорт компонента, для использования в качестве модуля (npm/webpack/etc.)
-export default component
+export default VueTextTransition
