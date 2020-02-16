@@ -27,15 +27,15 @@ export default class VueTextTransitionLetter extends Vue {
   }
 
   get visibleClass(): string {
-    return `v--${this.baseClass}_visible`
+    return `v--vtt-${this.baseClass}_visible`
   }
 
   get hiddenClass(): string {
-    return `v--${this.baseClass}_hidden`
+    return `v--vtt-${this.baseClass}_hidden`
   }
 
   get regularClass(): string {
-    return `v--${this.baseClass}`
+    return `v--vtt-${this.baseClass}`
   }
 
   render(h: CreateElement): VNode {
