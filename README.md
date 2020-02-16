@@ -1,6 +1,16 @@
 # vue-text-transition
 
+[![vue](https://img.shields.io/badge/Vue-2.x-green.svg)](https://vuejs.org/index.html)
+[![license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/smwbtech/vue-text-transition/blob/master/LICENSE.md)
+[![Build Status](https://travis-ci.org/smwbtech/vue-text-transition.svg?branch=master)](https://travis-ci.org/smwbtech/vue-text-transition)
+[![Coverage Status](https://coveralls.io/repos/github/smwbtech/vue-text-transition/badge.svg?branch=master)](https://coveralls.io/github/smwbtech/vue-text-transition?branch=master)
+[![Size](https://badgen.net/bundlephobia/minzip/vue-text-transition)](https://bundlephobia.com/result?p=vue-text-transition@1.0.4)
+
+!![Gif Image](https://raw.githubusercontent.com/smwbtech/vue-text-transition/master/public/vue-text-transition.gif)
+
 The component to animate your text letter by letter. You can bind different classes to each letter using css selectors.
+
+####[Live demo](https://codesandbox.io/s/headless-voice-h18hg?fontsize=14&hidenavigation=1&theme=dark)
 
 ## Installation
 
