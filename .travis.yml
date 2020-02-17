@@ -25,4 +25,4 @@ jobs:
         provider: npm
         api_token: '$NPM_TOKEN'
         email: '$NPM_EMAIL'
-        edge: true
+        skip_cleanup: true
