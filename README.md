@@ -4,7 +4,7 @@
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/smwbtech/vue-text-transition/blob/master/LICENSE.md)
 [![Build Status](https://travis-ci.org/smwbtech/vue-text-transition.svg?branch=master)](https://travis-ci.org/smwbtech/vue-text-transition)
 [![Coverage Status](https://coveralls.io/repos/github/smwbtech/vue-text-transition/badge.svg?branch=master)](https://coveralls.io/github/smwbtech/vue-text-transition?branch=master)
-[![Size](https://badgen.net/bundlephobia/minzip/vue-text-transition)](https://bundlephobia.com/result?p=vue-text-transition@1.0.6)
+[![Size](https://badgen.net/bundlephobia/minzip/vue-text-transition@latest)](https://bundlephobia.com/result?p=vue-text-transition@latest)
 
 ![Gif Image](https://raw.githubusercontent.com/smwbtech/vue-text-transition/master/public/vue-text-transition.gif)
 
