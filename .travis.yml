@@ -23,6 +23,6 @@ jobs:
         - npm run build:lib
       deploy:
         provider: npm
-        api_token: '$NPM_TOKEN'
+        api_key: '$NPM_TOKEN'
         email: '$NPM_EMAIL'
         skip_cleanup: true
