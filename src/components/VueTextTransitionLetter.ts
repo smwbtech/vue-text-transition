@@ -7,6 +7,7 @@ export default class VueTextTransitionLetter extends Vue {
   @Prop({ default: false }) readonly show!: boolean
   @Prop({ default: 100 }) readonly interval!: number
   @Prop({ required: true }) readonly className!: string
+  @Prop({ default: false }) readonly isLast?: boolean
   @Prop({ default: null }) readonly customClass?: CustomSelectorData[] | null
 
   baseClass = ''
@@ -23,6 +24,26 @@ export default class VueTextTransitionLetter extends Vue {
           break
         }
       }
+    }
+
+    if (this.isLast) {
+      this.$el.addEventListener(
+        'transitionend',
+        /* istanbul ignore next */ e =>
+          this.$emit('last-letter-transitionend', e)
+      )
+
+      this.$el.addEventListener(
+        'onwebkittransitionend',
+        /* istanbul ignore next */ e =>
+          this.$emit('last-letter-transitionend', e)
+      )
+
+      this.$el.addEventListener(
+        'animationend',
+        /* istanbul ignore next */ e =>
+          this.$emit('last-letter-animationend', e)
+      )
     }
   }
 

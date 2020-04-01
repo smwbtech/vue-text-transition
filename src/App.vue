@@ -6,15 +6,9 @@
       :show="show"
       interval="10"
       :custom-class="[{ selector: ':nth-child(odd)', class: 'test_odd' }]"
+      @last-letter-transitionend="transitionEndHandler"
       >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget nisl ac
-      magna ultricies rhoncus. Aliquam libero nunc, placerat eget massa nec,
-      aliquam gravida dui. Nulla semper mi accumsan erat sodales pharetra. Duis
-      at facilisis dui. Suspendisse semper id urna id bibendum. Proin id risus
-      non ex ultricies fringilla. Mauris non mauris at nulla volutpat
-      condimentum. Ut ac dictum turpis, eget pellentesque diam. Vestibulum
-      pellentesque sit amet lacus vel posuere. Nam fermentum, risus vitae
-      egestas imperdiet, nisi eros accumsan est, vestibulum bibendum massa lacus
-      eu dolor.
+      magna ultricies rhoncus.
     </VueTextTransition>
     <button @click="show = !show">Toggle show</button>
   </div>
@@ -32,6 +26,13 @@ import VueTextTransition from '@/components/VueTextTransition'
   data() {
     return {
       show: false
+    }
+  },
+
+  methods: {
+    transitionEndHandler(e) {
+      console.log(e)
+      console.log('last letter is transitioned!')
     }
   }
 })
@@ -52,24 +53,24 @@ div {
   overflow: hidden;
 }
 
-.v--test,
-.v--test_odd {
+.v--vtt-test,
+.v--vtt-test_odd {
   will-change: transform, opacity;
   transition: opacity 0.3s ease-in-out, transform 1s ease-in-out;
 }
 
-.v--test_visible,
-.v--test_odd_visible {
+.v--vtt-test_visible,
+.v--vtt-test_odd {
   opacity: 1;
   transform: translateY(0);
 }
 
-.v--test_hidden {
+.v--vtt-test_hidden {
   opacity: 0;
   transform: translateY(20px);
 }
 
-.v--test_odd_hidden {
+.v--vtt-test_odd_hidden {
   opacity: 0;
   transform: translateY(-20px);
 }
